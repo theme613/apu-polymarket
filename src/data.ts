@@ -1,4 +1,4 @@
-import type { Market } from './types';
+import type { Market, Poll } from './types';
 
 export const initialMarkets: Market[] = [
   {
@@ -83,6 +83,69 @@ export const initialMarkets: Market[] = [
       { id: '6a', label: 'Yes, plenty', probability: 20, pool: 150 },
       { id: '6b', label: 'Yes, but far', probability: 50, pool: 350 },
       { id: '6c', label: 'No, full!', probability: 30, pool: 180 },
+    ],
+  },
+];
+
+export const initialPolls: Poll[] = [
+  {
+    id: 'p1',
+    title: 'Best study spot on campus?',
+    description: 'Where do you prefer to study?',
+    category: 'School Life',
+    createdAt: '2026-03-20',
+    totalVotes: 156,
+    icon: 'book-open',
+    options: [
+      { id: 'p1a', label: 'Library', votes: 67, color: 'blue' },
+      { id: 'p1b', label: 'Cafeteria', votes: 23, color: 'green' },
+      { id: 'p1c', label: 'Student Lounge', votes: 45, color: 'purple' },
+      { id: 'p1d', label: 'Outside/Field', votes: 21, color: 'orange' },
+    ],
+  },
+  {
+    id: 'p2',
+    title: 'Favorite cafeteria meal?',
+    description: 'Which meal do you actually enjoy?',
+    category: 'Food',
+    createdAt: '2026-03-22',
+    totalVotes: 89,
+    icon: 'utensils',
+    options: [
+      { id: 'p2a', label: 'Nasi Lemak', votes: 42, color: 'red' },
+      { id: 'p2b', label: 'Chicken Rice', votes: 31, color: 'yellow' },
+      { id: 'p2c', label: 'Western Food', votes: 12, color: 'blue' },
+      { id: 'p2d', label: 'None of these', votes: 4, color: 'gray' },
+    ],
+  },
+  {
+    id: 'p3',
+    title: 'Best time for classes?',
+    description: 'When are you most productive?',
+    category: 'Academics',
+    createdAt: '2026-03-23',
+    totalVotes: 234,
+    icon: 'clock',
+    options: [
+      { id: 'p3a', label: '8 AM - 10 AM', votes: 45, color: 'blue' },
+      { id: 'p3b', label: '10 AM - 12 PM', votes: 89, color: 'green' },
+      { id: 'p3c', label: '2 PM - 4 PM', votes: 67, color: 'yellow' },
+      { id: 'p3d', label: '4 PM - 6 PM', votes: 33, color: 'red' },
+    ],
+  },
+  {
+    id: 'p4',
+    title: 'How do you commute to school?',
+    description: 'Share your daily commute method',
+    category: 'School Life',
+    createdAt: '2026-03-24',
+    totalVotes: 178,
+    icon: 'car',
+    options: [
+      { id: 'p4a', label: 'Drive', votes: 78, color: 'blue' },
+      { id: 'p4b', label: 'Public Transport', votes: 56, color: 'green' },
+      { id: 'p4c', label: 'Carpool/Grab', votes: 31, color: 'purple' },
+      { id: 'p4d', label: 'Walk/Cycle', votes: 13, color: 'orange' },
     ],
   },
 ];
