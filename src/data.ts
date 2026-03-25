@@ -1,0 +1,88 @@
+import type { Market } from './types';
+
+export const initialMarkets: Market[] = [
+  {
+    id: '1',
+    title: 'When will APSpace app crash next?',
+    description: 'Predict when the APSpace app will break or crash during registration/exam period',
+    category: 'School Life',
+    endDate: '2026-04-15',
+    volume: 1250,
+    icon: 'smartphone',
+    outcomes: [
+      { id: '1a', label: 'Before Week 4', probability: 65, pool: 450 },
+      { id: '1b', label: 'Week 4-8', probability: 25, pool: 200 },
+      { id: '1c', label: 'After Week 8', probability: 10, pool: 100 },
+    ],
+  },
+  {
+    id: '2',
+    title: 'Will the lecture be nice or mad?',
+    description: 'Predict the mood of tomorrow\'s surprise quiz announcement',
+    category: 'Academics',
+    endDate: '2026-03-26',
+    volume: 890,
+    icon: 'user',
+    outcomes: [
+      { id: '2a', label: 'Nice & Chill', probability: 35, pool: 320 },
+      { id: '2b', label: 'Strict but Fair', probability: 45, pool: 410 },
+      { id: '2c', label: 'Absolutely Mad', probability: 20, pool: 160 },
+    ],
+  },
+  {
+    id: '3',
+    title: 'Will class end early today?',
+    description: 'Predict if the professor will finish lecture before scheduled time',
+    category: 'Academics',
+    endDate: '2026-03-25',
+    volume: 560,
+    icon: 'clock',
+    outcomes: [
+      { id: '3a', label: 'Yes, 10+ min early', probability: 40, pool: 250 },
+      { id: '3b', label: 'Yes, 5-10 min early', probability: 35, pool: 200 },
+      { id: '3c', label: 'No, full duration', probability: 25, pool: 110 },
+    ],
+  },
+  {
+    id: '4',
+    title: 'Cafeteria special: Will it be good?',
+    description: 'Rate today\'s cafeteria surprise special meal',
+    category: 'Food',
+    endDate: '2026-03-25',
+    volume: 420,
+    icon: 'utensils',
+    outcomes: [
+      { id: '4a', label: 'Delicious!', probability: 15, pool: 80 },
+      { id: '4b', label: 'Edible', probability: 55, pool: 280 },
+      { id: '4c', label: 'Mystery Meat Alert', probability: 30, pool: 60 },
+    ],
+  },
+  {
+    id: '5',
+    title: 'Will it rain during lunch break?',
+    description: 'Predict the weather during the lunch break today',
+    category: 'Weather',
+    endDate: '2026-03-25',
+    volume: 340,
+    icon: 'cloud-rain',
+    outcomes: [
+      { id: '5a', label: 'Sunny', probability: 60, pool: 210 },
+      { id: '5b', label: 'Light Rain', probability: 30, pool: 90 },
+      { id: '5c', label: 'Thunderstorm', probability: 10, pool: 40 },
+    ],
+  },
+  {
+    id: '6',
+    title: 'Parking spot availability?',
+    description: 'Will you find a parking spot before 8:30 AM?',
+    category: 'School Life',
+    endDate: '2026-03-26',
+    volume: 680,
+    icon: 'car',
+    outcomes: [
+      { id: '6a', label: 'Yes, plenty', probability: 20, pool: 150 },
+      { id: '6b', label: 'Yes, but far', probability: 50, pool: 350 },
+      { id: '6c', label: 'No, full!', probability: 30, pool: 180 },
+    ],
+  },
+];
